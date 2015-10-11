@@ -14,6 +14,7 @@ class Step(models.Model):
     descrtiption = models.TextField()
     order = models.IntegerField(default=0)
     course = models.ForeignKey(Course)
+    content = models.TextField(blank=True,default='')
 
     class Meta:
         ordering = ["order",]
