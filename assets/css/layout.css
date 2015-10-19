@@ -1,4 +1,29 @@
-html {
+
+.full {
+  background: url(http://c.fastcompany.net/multisite_files/fastcompany/poster/2015/05/3046442-poster-p-1-this-startup-pays-african-students-to-learn-how-to-code.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+.color{
+  color: #fff;
+  margin-top:0;
+  margin-bottom: 0;
+  /*background-color: transparent;*/
+}
+.list-custom{
+
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: auto;
+}
+/*html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
@@ -119,5 +144,7 @@ article .steps {
   border-top: 2px solid #e6557e; }
   article .steps h3 + p {
     margin-left: 1em; }
+
+*/
 
 /*# sourceMappingURL=layout.css.map */

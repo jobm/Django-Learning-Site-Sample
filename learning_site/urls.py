@@ -20,9 +20,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
 
 urlpatterns = [
+    url(r'^$',views.hello_world),
     url(r'^courses/',include('courses.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$',views.hello_world),
+
 
 ]
 

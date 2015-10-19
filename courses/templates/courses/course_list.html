@@ -1,9 +1,15 @@
-{% for course in courses%}
-<h2>{{ course.title }}</h2>
-<br>
-<p>
-  {{ course.descrtiption }}
-</p>
-<br>
-<hr>
-{% endfor %}
+
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid">
+  {% for course in courses%}
+  <div class="list-group text-center list-custom">
+    <a href="course/{{course.id}}" class="list-group-item">
+      <h4 class="list-group-item-heading">{{course.title}}</h4>
+      <p class="list-group-item-text">{{course.descrtiption}}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
